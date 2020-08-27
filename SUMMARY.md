@@ -1,0 +1,20 @@
+# Table of contents
+
+* [Common ML models summary](README.md)
+* [Linear](summary.md)
+* [Logistics](logistics.md)
+* [KNN](knn.md)
+* [SVM](svm.md)
+* [Decision Tree](decision-tree.md)
+* [Random Forest](random-forest.md)
+* [Gradient Boosting Tree](gradient-boosting-tree.md)
+* [XGBoost](xgboost.md)
+* [Naive Bayes](naive-bayes.md)
+* [PCA](pca.md)
+* [K-means](k-means.md)
+* [CNN](cnn.md)
+* [RNN](rnn.md)
+* [LSTM-GRU](lstm-gru.md)
+* [Transformer](transformer.md)
+* [Auto-Encoder](auto-encoder.md)
+
