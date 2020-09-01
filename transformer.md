@@ -26,23 +26,37 @@ So **basically, the dot product of Query and Key is computing their cosine simil
 
 ### Self-attention Procedure
 
+1. Randomly initialize weight matrix for query, key and value
+2. Calculate query, key and value by dot product of the input X and their corresponding weight matrix
+3. Dot product of Key and Query to get the attention score
+4. Softmax the attention score across all the input
+5. Multiply the attention score by the Value to get the weighted vector
+6. Add all weighted vector to get output for its corresponding input
+7. Repeat 2 - 6 until end of the sentence
+
+Note: the magnitude of output vectors is the attention that they paid to other input vector 
+
+Note: why it works: the Query of each input vector multiply the Key of all other input vectors \(including itself\) to get similarity, once get higher similarity/attention score, this current specific output should pay more attention on it
+
 {% embed url="https://towardsdatascience.com/illustrated-self-attention-2d627e33b20a" %}
 
 ![](.gitbook/assets/ezgif.com-gif-maker.gif)
+
+![](.gitbook/assets/image%20%28106%29.png)
 
 ### Where Query, Key and Value come from?
 
 Query, Key and Value are **all the linear transformation of the input X**, by dot product of different **trainable randomly initialized weight matrix**
 
-![](.gitbook/assets/image%20%28108%29.png) 
+![](.gitbook/assets/image%20%28109%29.png) 
 
 {% embed url="https://towardsdatascience.com/understand-self-attention-in-bert-intuitively-cd480cbff30b" %}
 
-![](.gitbook/assets/image%20%28106%29.png)
+![](.gitbook/assets/image%20%28107%29.png)
 
 _**For example: unsupervised language model \(dot product of Q and K\):**_
 
-![](.gitbook/assets/image%20%28107%29.png)
+![](.gitbook/assets/image%20%28108%29.png)
 
 **Why we need Vector:** after getting the softmax result from Q and K, which is essentially a weight or attention that the embedding matrix need to focus, we need calculate the weighted vector so that we can understand which part should pay more attention
 
