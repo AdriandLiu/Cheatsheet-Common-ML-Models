@@ -24,6 +24,10 @@ Multi-headed attention is a module in the transformer network that computes the 
 
 So **basically, the dot product of Query and Key is computing their cosine similarity to see how these two related to each other, also, because we always want to find the best match item, the cosine similiary is supposed to be higher is better, so it is also the indicator of higher score get more focus.** Then scale the product by square root of dimension and get their softmax value to enhance the larger value so that we will get clue on where to get more attention \(By doing a softmax the higher scores get heighten, and lower scores are depressed. This allows the model to be more confident about which words to attend too.\). **Then the calculated attention matrix will have a dot product with the Value, which the higher softmax scores will keep the value of words/embedding the model learns is more important.**
 
+### Where Query, Key and Value come from?
+
+![](.gitbook/assets/image%20%28106%29.png)
+
 ### Multi-attention head
 
 Set number of multi-attention head N, then split Query, Key and Value to N times of splitting.
