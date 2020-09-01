@@ -26,7 +26,15 @@ So **basically, the dot product of Query and Key is computing their cosine simil
 
 ### Where Query, Key and Value come from?
 
+{% embed url="https://towardsdatascience.com/understand-self-attention-in-bert-intuitively-cd480cbff30b" %}
+
 ![](.gitbook/assets/image%20%28106%29.png)
+
+_**For example: unsupervised language model \(dot product of Q and K\):**_
+
+![](.gitbook/assets/image%20%28107%29.png)
+
+**Why we need Vector:** after getting the softmax result from Q and K, which is essentially a weight or attention that the embedding matrix need to focus, we need calculate the weighted vector so that we can understand which part should pay more attention
 
 ### Multi-attention head
 
