@@ -24,7 +24,17 @@ Multi-headed attention is a module in the transformer network that computes the 
 
 So **basically, the dot product of Query and Key is computing their cosine similarity to see how these two related to each other, also, because we always want to find the best match item, the cosine similiary is supposed to be higher is better, so it is also the indicator of higher score get more focus.** Then scale the product by square root of dimension and get their softmax value to enhance the larger value so that we will get clue on where to get more attention \(By doing a softmax the higher scores get heighten, and lower scores are depressed. This allows the model to be more confident about which words to attend too.\). **Then the calculated attention matrix will have a dot product with the Value, which the higher softmax scores will keep the value of words/embedding the model learns is more important.**
 
+### Self-attention Procedure
+
+{% embed url="https://towardsdatascience.com/illustrated-self-attention-2d627e33b20a" %}
+
+![](.gitbook/assets/ezgif.com-gif-maker.gif)
+
 ### Where Query, Key and Value come from?
+
+Query, Key and Value are **all the linear transformation of the input X**, by dot product of different **trainable randomly initialized weight matrix**
+
+![](.gitbook/assets/image%20%28108%29.png) 
 
 {% embed url="https://towardsdatascience.com/understand-self-attention-in-bert-intuitively-cd480cbff30b" %}
 
@@ -43,6 +53,10 @@ Set number of multi-attention head N, then split Query, Key and Value to N times
 **To make this a multi-headed attention computation, you need to split the query, key, and value into N vectors before applying self-attention.** The split vectors then go through the self-attention process individually. Each self-attention process is called a head. Each head produces an output vector that gets concatenated into a single vector before going through the final linear layer. In theory, **each head would learn something different therefore giving the encoder model more representation power.**
 
 ![](.gitbook/assets/image%20%2872%29.png)
+
+### Why Multi-head?
+
+Just like the various convolutional filters in CNN, multi-head aims to capture the various information by different randomly initialized weight matrixes in query, key and value 
 
 ### The Residual Connections, Layer Normalization, and Feed Forward Network
 
