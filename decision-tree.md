@@ -151,10 +151,6 @@ Then choose the least Gini impurity - **Good Blood Circulation as the leaf node*
 
 ### Information gain
 
-#### How to split: Similar with Gini index split
-
-{% embed url="https://homes.cs.washington.edu/~shapiro/EE596/notes/InfoGain.pdf" %}
-
 
 
 {% embed url="https://towardsdatascience.com/gini-index-vs-information-entropy-7a7e4fed3fcb" %}

@@ -83,14 +83,6 @@ Thus, PCA is a method that brings together:
 
 PCA combines our predictors and allows us to drop the Eigenvectors that are relatively unimportant.
 
-### How PCA transform data
-
-{% embed url="https://medium.com/analytics-vidhya/understanding-principle-component-analysis-pca-step-by-step-e7a4bb4031d9" %}
-
-![](.gitbook/assets/image%20%28110%29.png)
-
-After transforming, we obtained the data with reduced dimension but relatively large variance w.r.t. the original data
-
 ### When to use PCA
 
 * Reduce the number of features but cannot identify the unimportant ones that can be ignored, and

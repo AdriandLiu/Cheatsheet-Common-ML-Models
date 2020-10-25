@@ -73,5 +73,10 @@ Feature selection
 
 Recommendation
 
+Fraud detection: 
+
+1. train auto-encoder with only normal transaction
+2. feed suspicious transactions into trained auto-encoder, the output of it will be significantly different than the other normal transaction.
+
 
 
