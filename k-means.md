@@ -8,7 +8,7 @@ K-means is an unsupervised algorithm that was used to cluster different class
 
 1. Randomly select K points as centroids 
 2. Calculate the _Euclidean_ distance between the centroids and other points and get mean
-3. Assign other points to the class that is closest to them \(lowest distance to the specific centroid\)
+3. Assign other points to the class that is closest to them \(lowest distance to the specific centroid\) \(calculate the distance between this point to all centroid, whichever smaller/closer, assign it\)
 4. Repeat 2 - 3 until the centroids and assigned data points don't change any further.
 
 ### Loss
