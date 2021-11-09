@@ -4,7 +4,7 @@ Transformer is an algorithm that uses attention mechanism to boost the training 
 
 **Encoder Illustrative Explain:** Use others to represent who I (one input embedding) am by getting the similarity with others (input embeddings) (who I am most closed by), generate a representation of myself.
 
-**Decoder Illustrative Explain:** Use others to represent who I (one output embedding) am by getting the similarity with others (output embeddings), try to find the most similar one from input representations from Encoder, if there is a match, this is my soul mate (output is the translation of input). 
+**Decoder Illustrative Explain:** Use others to represent who I (one output embedding) am by getting the similarity with others (output embeddings), try to find the most similar one from input representations from Encoder with me, if there is a match, this is my soul mate (output is the translation of input). 
 
 {% embed url="https://www.michaelphi.com/illustrated-guide-to-transformers/" %}
 
