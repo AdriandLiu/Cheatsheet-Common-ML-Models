@@ -2,7 +2,9 @@
 
 Transformer is an algorithm that uses attention mechanism to boost the training speed by parallelization. It is widely used in Natual Language Processing, Time-series data analysis. It has the architecture of encoder and decoder.  &#x20;
 
+**Encoder Illustrative Explain:** Use others to represent who I (one input embedding) am by getting the similarity with others (input embeddings) (who I am most closed by), generate a representation of myself.
 
+**Decoder Illustrative Explain:** Use others to represent who I (one output embedding) am by getting the similarity with others (output embeddings), try to find the most similar one from input representations from Encoder, if there is a match, this is my soul mate (output is the translation of input). 
 
 {% embed url="https://www.michaelphi.com/illustrated-guide-to-transformers/" %}
 
@@ -22,7 +24,7 @@ Multi-headed attention is a module in the transformer network that computes the 
 
 
 
-Purpose of SELF-attention, Imagine that we have a group of people, and we need to translate to another group of people. we need to find out who is the person that closest to myself so that he can help me to identify myself when I translate myself
+**Purpose** of SELF-attention, Use others to represent who you are. Imagine that we have a group of people, and we need to translate to another group of people. we need to find out who is the person that closest to myself so that he can help me to identify myself when I translate myself
 
 ![](<.gitbook/assets/image (88).png>)
 
