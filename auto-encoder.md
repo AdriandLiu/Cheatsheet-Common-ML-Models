@@ -12,9 +12,9 @@ it compress the information taken from input and then reconstruct them into orig
 
 
 
-![](.gitbook/assets/image%20%2862%29.png)
+![](<.gitbook/assets/image (100).png>)
 
-### Variation 
+### Variation&#x20;
 
 all have larger number of nodes in hidden layer than input layer
 
@@ -24,7 +24,7 @@ we cannot simple have larger number of nodes in hidden layer than input layer is
 
 Instead of having a bottleneck, we replace it by mean vector and standard deviation vector of the distribution. we have sampled vector operation, so back-propogation will be performed by adding the reparameterization trick.
 
-![](.gitbook/assets/image%20%285%29.png)
+![](<.gitbook/assets/image (104).png>)
 
 #### Sparse auto-encoder
 
@@ -33,15 +33,15 @@ still compress things but with different sparse nodes
 difference:
 
 * number of nodes in hidden layer greater than input layer
-* regularisation \(add constraints to hidden layer so that doesn't allow the autoencoder to use all of its hidden layer nodes every single time, so any time, only certain number of nodes will be used\)
+* regularisation (add constraints to hidden layer so that doesn't allow the autoencoder to use all of its hidden layer nodes every single time, so any time, only certain number of nodes will be used)
 
 #### Denoising auto-encoder
 
 difference:
 
-* randomly turn the input to zero \(add noisy\)
+* randomly turn the input to zero (add noisy)
 * calculate the error, instead of compare output with input layer, it compares with the original input before turning the input to zero
-* get rid of noise \(watermark, etc\)
+* get rid of noise (watermark, etc)
 
 #### Contractive auto-encoder
 
@@ -57,15 +57,15 @@ difference:
 
 
 
-## How 
+## How&#x20;
 
 Feature selection: take the six neurons in the input layer and transform them into three neurons in the hidden layer and then carry around these information and save some space and extract these features
 
-![](.gitbook/assets/image%20%2898%29.png)
+![](<.gitbook/assets/image (103).png>)
 
-![](.gitbook/assets/image%20%2851%29.png)
+![](<.gitbook/assets/image (101).png>)
 
-## 
+##
 
 ## Where
 
@@ -73,10 +73,8 @@ Feature selection
 
 Recommendation
 
-Fraud detection: 
+Fraud detection:&#x20;
 
 1. train auto-encoder with only normal transaction
 2. feed suspicious transactions into trained auto-encoder, the output of it will be significantly different than the other normal transaction.
-
-
 
